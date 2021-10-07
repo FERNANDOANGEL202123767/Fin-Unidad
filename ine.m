@@ -1,15 +1,15 @@
 %octave.script
 %School         :Tecnologico de Estudios Superiores de Jilotepec 
-%Specialty      :Ingeniería en Sistemas Computacionales 
-%Title          :Clasificacion de los números 
-%Description    :Scrip conceptos de números 
-%Author         :Iván Mora García, Fernando Angeles, Angelica  
+%Specialty      :IngenierÃ­a en Sistemas Computacionales 
+%Title          :Clasificacion de los nÃºmeros 
+%Description    :Scrip conceptos de nÃºmeros 
+%Author         :IvÃ¡n Mora GarcÃ­a, Fernando Angel, Angelica Arellano
 %Date           :07/10/2021
 %Version        :1
 %Usage          :octave >/path/ClasificacionNumeros
 %Notes          :Requiere CLI Octave 
 
-%Inecuación de primer grado
+%InecuaciÃ³n de primer grado
 pkg load symbolic
 syms x
 disp('---------------Inecuacion de primer grado-----');
@@ -22,7 +22,7 @@ f=x-11
 subplot(3,3,1);
 ezplot(f)     
 
-%Inecuación de segundo grado
+%InecuaciÃ³n de segundo grado
 pkg load symbolic
 syms x
 disp('---------------Inecuacion de segundo grado-----');
@@ -33,3 +33,15 @@ syms x
 f=5*x^2+8*x+1
 subplot(3,3,2);
 ezplot(f)
+
+%valor absoluto
+disp('valor absoluto:');
+syms x
+abs (x+5)>30)
+x=[-5:0.01:5]
+y=(x-4);
+subplot(3,3,3)
+plot(x,y,'ro-')
+xlabel('x');
+ylabel('-oo');
+title('la inecuacion es');
